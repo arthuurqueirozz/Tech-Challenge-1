@@ -1,5 +1,6 @@
-using FCG.Application.Dtos.Auth;
-using FCG.Application.Validators;
+using FCG.Application.Validators.Identity;
+using FCG.Domain.Dtos.Models.Identity;
+using FCG.Domain.Dtos.Validators.Identity;
 
 namespace FCG.Application.Tests.Validators;
 

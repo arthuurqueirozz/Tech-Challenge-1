@@ -21,7 +21,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\FCG.Domain\FCG.Domain.csproj" />
+    <Reference Include="FCG.Domain">
+      <HintPath>..\..\src\FCG.Domain\bin\$(Configuration)\net8.0\FCG.Domain.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="FCG.Infrastructure">
+      <HintPath>..\..\src\FCG.Infrastructure\bin\$(Configuration)\net8.0\FCG.Infrastructure.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
   </ItemGroup>
+
+  <Target Name="BuildDomainTestDependencies" BeforeTargets="ResolveReferences">
+    <MSBuild
+      Projects="..\..\src\FCG.Domain\FCG.Domain.csproj;..\..\src\FCG.Infrastructure\FCG.Infrastructure.csproj"
+      Targets="Build"
+      BuildInParallel="true"
+      Properties="Configuration=$(Configuration)" />
+  </Target>
 
 </Project>

@@ -1,7 +1,5 @@
-using FCG.Domain.Entities;
-using FCG.Domain.Enums;
-using FCG.Domain.Exceptions;
-using FCG.Domain.ValueObjects;
+using FCG.Domain.Shared;
+using FCG.Infrastructure.Entities.Identity;
 
 namespace FCG.Domain.Tests.Registration;
 
