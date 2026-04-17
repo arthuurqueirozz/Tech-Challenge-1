@@ -3,7 +3,7 @@ using FCG.Domain.Dtos.Models.Sales;
 using FCG.Domain.Interfaces;
 using FCG.Domain.Services;
 using FCG.Domain.Shared;
-using FCG.Infrastructure.Entities;
+using FCG.Domain.Entities;
 using FCG.Infrastructure.Interfaces;
 
 namespace FCG.Application.Tests.Sales;

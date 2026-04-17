@@ -1,7 +1,7 @@
 using FCG.Domain.Dtos.Models.Catalog;
 using FCG.Domain.Interfaces;
 using FCG.Domain.Shared;
-using FCG.Infrastructure.Entities;
+using FCG.Domain.Entities;
 using FCG.Infrastructure.Interfaces;
 using FCG.Infrastructure.Mappers;
 

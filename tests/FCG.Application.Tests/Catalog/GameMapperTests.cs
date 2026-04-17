@@ -1,4 +1,4 @@
-using FCG.Infrastructure.Entities;
+using FCG.Domain.Entities;
 using FCG.Infrastructure.Mappers;
 
 namespace FCG.Application.Tests.Catalog;

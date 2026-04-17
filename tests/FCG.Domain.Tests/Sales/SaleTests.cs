@@ -1,5 +1,5 @@
 using FCG.Domain.Shared;
-using FCG.Infrastructure.Entities;
+using FCG.Domain.Entities;
 
 namespace FCG.Domain.Tests.Sales;
 

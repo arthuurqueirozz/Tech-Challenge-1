@@ -1,6 +1,6 @@
 using FCG.Domain.Shared;
 
-namespace FCG.Infrastructure.Entities.Identity;
+namespace FCG.Domain.Entities.Identity;
 
 public static class PasswordPolicy
 {

@@ -1,4 +1,4 @@
-using FCG.Infrastructure.Entities;
+using FCG.Domain.Entities;
 using FCG.Infrastructure.Interfaces;
 using FCG.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;

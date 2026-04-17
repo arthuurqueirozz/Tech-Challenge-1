@@ -1,7 +1,7 @@
 using FCG.Domain.Interfaces;
 using FCG.Domain.Shared;
-using FCG.Infrastructure.Entities;
-using FCG.Infrastructure.Entities.Identity;
+using FCG.Domain.Entities;
+using FCG.Domain.Entities.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace FCG.Infrastructure.Persistence;

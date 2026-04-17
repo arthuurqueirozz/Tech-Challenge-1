@@ -1,5 +1,5 @@
 using FCG.Domain.Shared;
-using FCG.Infrastructure.Entities.Identity;
+using FCG.Domain.Entities.Identity;
 
 namespace FCG.Domain.Tests.ValueObjects;
 

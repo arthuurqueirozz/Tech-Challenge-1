@@ -1,5 +1,5 @@
 using FCG.Domain.Dtos.Models.Identity;
-using FCG.Infrastructure.Entities.Identity;
+using FCG.Domain.Entities.Identity;
 
 namespace FCG.Infrastructure.Mappers;
 

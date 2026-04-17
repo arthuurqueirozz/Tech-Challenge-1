@@ -1,4 +1,4 @@
-using FCG.Infrastructure.Entities.Identity;
+using FCG.Domain.Entities.Identity;
 using FluentValidation;
 
 namespace FCG.Application.Validators.Identity;

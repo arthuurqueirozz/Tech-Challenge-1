@@ -22,26 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="FCG.Application">
-      <HintPath>..\..\src\FCG.Application\bin\$(Configuration)\net8.0\FCG.Application.dll</HintPath>
-      <Private>true</Private>
-    </Reference>
-    <Reference Include="FCG.Domain">
-      <HintPath>..\..\src\FCG.Domain\bin\$(Configuration)\net8.0\FCG.Domain.dll</HintPath>
-      <Private>true</Private>
-    </Reference>
-    <Reference Include="FCG.Infrastructure">
-      <HintPath>..\..\src\FCG.Infrastructure\bin\$(Configuration)\net8.0\FCG.Infrastructure.dll</HintPath>
-      <Private>true</Private>
-    </Reference>
+    <ProjectReference Include="..\..\src\FCG.Application\FCG.Application.csproj" />
+    <ProjectReference Include="..\..\src\FCG.Domain\FCG.Domain.csproj" />
+    <ProjectReference Include="..\..\src\FCG.Infrastructure\FCG.Infrastructure.csproj" />
   </ItemGroup>
-
-  <Target Name="BuildApplicationTestDependencies" BeforeTargets="ResolveReferences">
-    <MSBuild
-      Projects="..\..\src\FCG.Domain\FCG.Domain.csproj;..\..\src\FCG.Infrastructure\FCG.Infrastructure.csproj;..\..\src\FCG.Application\FCG.Application.csproj"
-      Targets="Build"
-      BuildInParallel="true"
-      Properties="Configuration=$(Configuration)" />
-  </Target>
 
 </Project>

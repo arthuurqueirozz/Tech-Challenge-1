@@ -1,4 +1,4 @@
-using FCG.Infrastructure.Entities;
+using FCG.Domain.Entities;
 
 namespace FCG.Infrastructure.Interfaces;
 

@@ -1,7 +1,7 @@
 using System.Text.RegularExpressions;
 using FCG.Domain.Shared;
 
-namespace FCG.Infrastructure.Entities.Identity;
+namespace FCG.Domain.Entities.Identity;
 
 public sealed class Email : IEquatable<Email>
 {

@@ -1,4 +1,4 @@
-namespace FCG.Infrastructure.Entities.Identity;
+namespace FCG.Domain.Entities.Identity;
 
 public enum UserRole
 {

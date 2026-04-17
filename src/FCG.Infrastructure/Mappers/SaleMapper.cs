@@ -1,5 +1,5 @@
 using FCG.Domain.Dtos.Models.Sales;
-using FCG.Infrastructure.Entities;
+using FCG.Domain.Entities;
 
 namespace FCG.Infrastructure.Mappers;
 

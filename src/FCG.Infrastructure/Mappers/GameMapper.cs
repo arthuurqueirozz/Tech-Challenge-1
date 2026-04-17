@@ -1,5 +1,5 @@
 using FCG.Domain.Dtos.Models.Catalog;
-using FCG.Infrastructure.Entities;
+using FCG.Domain.Entities;
 
 namespace FCG.Infrastructure.Mappers;
 

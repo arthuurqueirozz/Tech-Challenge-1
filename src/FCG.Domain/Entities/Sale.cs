@@ -1,6 +1,6 @@
 using FCG.Domain.Shared;
 
-namespace FCG.Infrastructure.Entities;
+namespace FCG.Domain.Entities;
 
 public class Sale
 {

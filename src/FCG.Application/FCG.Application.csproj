@@ -25,20 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FCG.Domain\FCG.Domain.csproj" />
+    <ProjectReference Include="..\FCG.Infrastructure\FCG.Infrastructure.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="FCG.Infrastructure">
-      <HintPath>..\FCG.Infrastructure\bin\$(Configuration)\net8.0\FCG.Infrastructure.dll</HintPath>
-      <Private>true</Private>
-    </Reference>
-  </ItemGroup>
-
-  <Target Name="BuildInfrastructureDependency" BeforeTargets="ResolveReferences">
-    <MSBuild
-      Projects="..\FCG.Infrastructure\FCG.Infrastructure.csproj"
-      Targets="Build"
-      Properties="Configuration=$(Configuration)" />
-  </Target>
 
 </Project>

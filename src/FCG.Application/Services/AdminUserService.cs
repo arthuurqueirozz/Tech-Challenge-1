@@ -2,7 +2,7 @@ using FCG.Domain.Dtos.Models.Identity;
 using FCG.Domain.Interfaces;
 using FCG.Domain.Interfaces.Identity;
 using FCG.Domain.Shared;
-using FCG.Infrastructure.Entities.Identity;
+using FCG.Domain.Entities.Identity;
 using FCG.Infrastructure.Interfaces;
 using FCG.Infrastructure.Mappers;
 
