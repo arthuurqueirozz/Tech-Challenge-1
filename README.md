@@ -191,10 +191,8 @@ Os artefatos complementares exigidos pelo edital:
 
 | Nome | RM | E-mail |
 |---|---|---|
-| Arthur Queiroz e Silva da Costa | INSERIR RM AQUI | arthur.queiroz.dev@gmail.com |
+| Arthur Queiroz e Silva da Costa | rm373799 | arthur.queiroz.dev@gmail.com |
 | Leonardo de Medeiros Bernardes | INSERIR RM AQUI | lmbernardes104@gmail.com  |
-| INSERIR NOME AQUI | INSERIR RM AQUI | INSERIR E-MAIL AQUI |
-| INSERIR NOME AQUI | INSERIR RM AQUI | INSERIR E-MAIL AQUI |
 
 ---
 
