@@ -1,9 +1,12 @@
-using FCG.Application.Abstractions;
-using FCG.Domain.Repositories;
-using FCG.Infrastructure.Configuration;
+using FCG.Domain.Dtos.Models.Identity;
+using FCG.Domain.Helpers;
+using FCG.Domain.Interfaces;
+using FCG.Domain.Interfaces.Identity;
+using FCG.Domain.Services.Identity;
+using FCG.Domain.Shared;
+using FCG.Infrastructure.Interfaces;
 using FCG.Infrastructure.Persistence;
-using FCG.Infrastructure.Persistence.Repositories;
-using FCG.Infrastructure.Security;
+using FCG.Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,7 +30,7 @@ public static class DependencyInjection
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IGameRepository, GameRepository>();
         services.AddScoped<IUserGameRepository, UserGameRepository>();
-        services.AddScoped<IPromotionRepository, PromotionRepository>();
+        services.AddScoped<ISaleRepository, SaleRepository>();
         services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<AppDbContext>());
 
         services.AddSingleton<IPasswordHasher, IdentityPasswordHasher>();

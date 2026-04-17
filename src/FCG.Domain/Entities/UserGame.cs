@@ -1,3 +1,5 @@
+using FCG.Domain.Entities.Identity;
+
 namespace FCG.Domain.Entities;
 
 public class UserGame

@@ -1,0 +1,30 @@
+@FCG.Api_HostAddress = http://localhost:5241
+
+GET {{FCG.Api_HostAddress}}/api/games
+Accept: application/json
+
+###
+
+POST {{FCG.Api_HostAddress}}/api/games
+Content-Type: application/json
+
+{
+  "title": "Cloud Racer",
+  "description": "Arcade racing in the cloud.",
+  "developer": "FCG Studio",
+  "price": 149.90
+}
+
+###
+
+POST {{FCG.Api_HostAddress}}/api/admin/sales
+Content-Type: application/json
+
+{
+  "title": "Weekend Sale",
+  "code": "WEEKEND20",
+  "discountPercent": 20,
+  "validFrom": "2026-04-10T00:00:00Z",
+  "validUntil": "2026-04-12T23:59:59Z",
+  "gameId": "00000000-0000-0000-0000-000000000000"
+}

@@ -1,5 +1,5 @@
-using FCG.Domain.Exceptions;
-using FCG.Domain.ValueObjects;
+using FCG.Domain.Shared;
+using FCG.Domain.Entities.Identity;
 
 namespace FCG.Domain.Tests.ValueObjects;
 

@@ -1,6 +1,7 @@
-using FCG.Application.Dtos.Users;
-using FCG.Application.Mapping;
-using FCG.Domain.Repositories;
+using FCG.Domain.Dtos.Models.Identity;
+using FCG.Domain.Interfaces.Identity;
+using FCG.Infrastructure.Interfaces;
+using FCG.Infrastructure.Mappers;
 
 namespace FCG.Application.Services;
 

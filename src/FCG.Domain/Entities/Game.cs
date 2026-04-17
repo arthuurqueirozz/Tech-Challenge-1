@@ -1,4 +1,4 @@
-using FCG.Domain.Exceptions;
+using FCG.Domain.Shared;
 
 namespace FCG.Domain.Entities;
 
@@ -8,6 +8,7 @@ public class Game
     public string Title { get; private set; } = null!;
     public string? Description { get; private set; }
     public string? Developer { get; private set; }
+    public decimal Price { get; private set; }
     public bool IsActive { get; private set; }
     public DateTime CreatedAt { get; private set; }
 
@@ -17,12 +18,9 @@ public class Game
 
     public const int MaxTitleLength = 300;
 
-    public static Game Create(string title, string? description = null, string? developer = null)
+    public static Game Create(decimal price, string title, string? description = null, string? developer = null)
     {
-        if (string.IsNullOrWhiteSpace(title))
-            throw new DomainValidationException("Title is required.");
-        if (title.Trim().Length > MaxTitleLength)
-            throw new DomainValidationException($"Title must be at most {MaxTitleLength} characters.");
+        Validate(title, price);
 
         return new Game
         {
@@ -30,6 +28,7 @@ public class Game
             Title = title.Trim(),
             Description = string.IsNullOrWhiteSpace(description) ? null : description.Trim(),
             Developer = string.IsNullOrWhiteSpace(developer) ? null : developer.Trim(),
+            Price = price,
             IsActive = true,
             CreatedAt = DateTime.UtcNow
         };
@@ -37,15 +36,23 @@ public class Game
 
     public void Deactivate() => IsActive = false;
 
-    public void Update(string title, string? description, string? developer)
+    public void Update(decimal price, string title, string? description, string? developer)
+    {
+        Validate(title, price);
+
+        Title = title.Trim();
+        Description = string.IsNullOrWhiteSpace(description) ? null : description.Trim();
+        Developer = string.IsNullOrWhiteSpace(developer) ? null : developer.Trim();
+        Price = price;
+    }
+
+    private static void Validate(string title, decimal price)
     {
         if (string.IsNullOrWhiteSpace(title))
             throw new DomainValidationException("Title is required.");
         if (title.Trim().Length > MaxTitleLength)
             throw new DomainValidationException($"Title must be at most {MaxTitleLength} characters.");
-
-        Title = title.Trim();
-        Description = string.IsNullOrWhiteSpace(description) ? null : description.Trim();
-        Developer = string.IsNullOrWhiteSpace(developer) ? null : developer.Trim();
+        if (price < 0)
+            throw new DomainValidationException("Price must be greater than or equal to zero.");
     }
 }

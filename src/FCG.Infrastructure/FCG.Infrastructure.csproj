@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FCG.Domain\FCG.Domain.csproj" />
-    <ProjectReference Include="..\FCG.Application\FCG.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
