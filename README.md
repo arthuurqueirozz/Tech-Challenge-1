@@ -179,7 +179,7 @@ Os artefatos complementares exigidos pelo edital:
 
 | Entregável | Link |
 |---|---|
-| 🎥 Vídeo de apresentação (YouTube) | **INSERIR LINK AQUI** |
+| 🎥 Vídeo de apresentação (YouTube) | **https://youtu.be/FMsILDIWsBY** |
 | 🧠 Documentação DDD / Event Storming (Miro) | **https://miro.com/welcomeonboard/Y1RBcmExSDYzYjl6ZHJCblFZbUlrOWNFQ3dsOFQxck5qdzgzOFhWTDAwQnpReWJsWVFYOTI5QlFKbnhBVkZzelpkRE02SlFCQjRmb0N5SG5NSFZ5SzN6M3VUSStQT1F6RWhRZDJMK08xMHFGQXBQNlRkK0xVZkhwR2p2NDA3VHdhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=462239212463** |
 | 📦 Repositório público no GitHub | **https://github.com/arthuurqueirozz/Tech-Challenge-1** |
 
